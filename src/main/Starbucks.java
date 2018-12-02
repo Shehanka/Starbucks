@@ -8,6 +8,8 @@ import javafx.stage.Stage;
 
 public class Starbucks extends Application {
 
+    public static boolean isSplashLoaded = false;
+
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("/ui/fxml/SplashScreenUI.fxml"));
