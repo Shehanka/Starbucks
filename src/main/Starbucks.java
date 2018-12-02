@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class Starbucks extends Application {
@@ -15,6 +16,8 @@ public class Starbucks extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/ui/fxml/SplashScreenUI.fxml"));
         primaryStage.setTitle("Starbucks");
         primaryStage.setScene(new Scene(root));
+        primaryStage.getIcons().add(new Image(getClass()
+                .getResourceAsStream("/ui/icon/starbucks-logo.png")));
         primaryStage.show();
     }
 
