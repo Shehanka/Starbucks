@@ -1,4 +1,4 @@
-package main;
+package com.chamodshehanka.starbucks.main;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -13,11 +13,12 @@ public class Starbucks extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("/ui/fxml/SplashScreenUI.fxml"));
+        Parent root = FXMLLoader.load(getClass()
+                .getResource("/com/chamodshehanka/starbucks/ui/fxml/SplashScreenUI.fxml"));
         primaryStage.setTitle("Starbucks");
         primaryStage.setScene(new Scene(root));
         primaryStage.getIcons().add(new Image(getClass()
-                .getResourceAsStream("/ui/icon/starbucks-logo.png")));
+                .getResourceAsStream("/com/chamodshehanka/starbucks/ui/icon/starbucks-logo.png")));
         primaryStage.show();
     }
 
