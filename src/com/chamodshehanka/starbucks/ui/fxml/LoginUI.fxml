@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootLogin" prefHeight="600.0" prefWidth="800.0" styleClass="fxml" stylesheets="@../css/ux-styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chamodshehanka.starbucks.ui.controller.LoginUIController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/login-image.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="53.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN">
+         <font>
+            <Font name="Calibri Bold" size="34.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="204.0" layoutY="200.0" prefHeight="226.0" prefWidth="392.0" styleClass="green-pane">
+         <children>
+            <JFXTextField fx:id="txtUserName" focusColor="WHITE" labelFloat="true" layoutX="46.0" layoutY="36.0" prefHeight="37.0" prefWidth="281.0" promptText="User Name" unFocusColor="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPassword" focusColor="WHITE" labelFloat="true" layoutX="46.0" layoutY="103.0" prefHeight="37.0" prefWidth="281.0" promptText="Password" unFocusColor="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton buttonType="RAISED" layoutX="215.0" layoutY="159.0" onAction="#loginAction" prefHeight="34.0" prefWidth="118.0" text="Login" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
