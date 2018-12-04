@@ -1,8 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="fxml" stylesheets="@../css/ux-styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chamodshehanka.starbucks.ui.controller.MainMenuUIController">
-
+   <children>
+      <ImageView fitHeight="209.0" fitWidth="373.0" layoutX="442.0" layoutY="391.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Starbucks_logo_bottom.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="80.0" prefWidth="800.0" styleClass="white-pane" />
+      <AnchorPane layoutX="81.0" layoutY="102.0" prefHeight="400.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="300.0" fitWidth="200.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/starbucks_coffee_cup.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="18.0" layoutY="288.0" text="MANAGE ITEMS" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="315.0" layoutY="102.0" prefHeight="400.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="217.0" fitWidth="133.0" layoutX="35.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/drinks.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="288.0" text="MAKE ORDER" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="549.0" layoutY="102.0" prefHeight="400.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="217.0" fitWidth="133.0" layoutX="35.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/drinks.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="288.0" prefHeight="37.0" prefWidth="142.0" text="TOP ITEMS" />
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
