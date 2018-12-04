@@ -4,5 +4,7 @@
 
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="fxml" stylesheets="@../css/ux-styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chamodshehanka.starbucks.ui.controller.MakeOrderUIController">
-
+   <children>
+      <AnchorPane prefHeight="151.0" prefWidth="800.0" styleClass="white-pane" />
+   </children>
 </AnchorPane>
