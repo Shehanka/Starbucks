@@ -106,11 +106,22 @@ public class MakeOrderUIController implements Initializable {
 
         lblItemAmount.setText(String.valueOf(amount));
         lblTotalAmount.setText(String.valueOf(total));
+
+        resetTextFields();
+    }
+
+    private void resetTextFields(){
+        txtItemCode.setText("");
+        txtDescription.setText("");
+        txtQty.setText("");
+        txtUnitPrice.setText("");
+        txtItemCode.requestFocus();
+        lblItemAmount.setText("");
     }
 
     @FXML
     private void removeItemAction() {
-
+        tblOrder.getItems().remove(tblOrder.getSelectionModel().getSelectedItem());
     }
 
     @FXML
@@ -137,5 +148,22 @@ public class MakeOrderUIController implements Initializable {
         backImageView.setFitWidth(40);
         backImageView.setFitHeight(40);
         btnBackButton.setGraphic(backImageView);
+    }
+
+    @FXML
+    private void loadDummyItemDescription(){
+        switch (txtItemCode.getText()) {
+            case "I001":
+                txtDescription.setText("Caffè Latte");
+                txtUnitPrice.requestFocus();
+                break;
+            case "I002":
+                txtDescription.setText("Caffè Americano");
+                txtUnitPrice.requestFocus();
+                break;
+            case "I003":
+                txtDescription.setText("Caramel Macchiato");
+                break;
+        }
     }
 }

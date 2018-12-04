@@ -23,16 +23,16 @@
       <JFXTextField fx:id="txtOrderID" focusColor="WHITE" labelFloat="true" layoutX="77.0" layoutY="118.0" prefHeight="25.0" prefWidth="77.0" promptText="Order ID" styleClass="text-field" text="B001" unFocusColor="WHITE" />
       <JFXDatePicker fx:id="datePickerOrderDate" defaultColor="#53c998" layoutX="191.0" layoutY="117.0" prefHeight="28.0" prefWidth="150.0" promptText="Order Date" />
       <JFXTextField fx:id="txtCustomerID" focusColor="WHITE" labelFloat="true" layoutX="370.0" layoutY="118.0" prefHeight="25.0" prefWidth="77.0" promptText="Customer ID" styleClass="text-field" unFocusColor="WHITE" />
-      <JFXTextField fx:id="txtItemCode" focusColor="WHITE" labelFloat="true" layoutX="479.0" layoutY="118.0" prefHeight="25.0" prefWidth="77.0" promptText="Item Code" styleClass="text-field" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtItemCode" focusColor="WHITE" labelFloat="true" layoutX="479.0" layoutY="118.0" onAction="#loadDummyItemDescription" prefHeight="25.0" prefWidth="77.0" promptText="Item Code" styleClass="text-field" unFocusColor="WHITE" />
       <JFXTextField fx:id="txtDescription" focusColor="WHITE" labelFloat="true" layoutX="583.0" layoutY="118.0" prefHeight="25.0" prefWidth="99.0" promptText="Item Description" styleClass="text-field" unFocusColor="WHITE" />
       <JFXTextField fx:id="txtUnitPrice" focusColor="WHITE" labelFloat="true" layoutX="77.0" layoutY="170.0" prefHeight="25.0" prefWidth="77.0" promptText="Unit Price" styleClass="text-field" unFocusColor="WHITE" />
       <JFXTextField fx:id="txtQty" focusColor="WHITE" labelFloat="true" layoutX="191.0" layoutY="170.0" prefHeight="25.0" prefWidth="77.0" promptText="Qty" styleClass="text-field" unFocusColor="WHITE" />
-      <Text fill="WHITE" layoutX="577.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text : ">
+      <Text fill="WHITE" layoutX="577.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount : ">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Text>
-      <Text fx:id="lblItemAmount" fill="WHITE" layoutX="635.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="40.47558307647705">
+      <Text fx:id="lblItemAmount" fill="WHITE" layoutX="649.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="40.47558307647705">
          <font>
             <Font size="13.0" />
          </font>
@@ -57,7 +57,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Text>
-      <Text fx:id="lblTotalAmount" fill="WHITE" layoutX="640.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="40.47558307647705">
+      <Text fx:id="lblTotalAmount" fill="WHITE" layoutX="650.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="40.47558307647705">
          <font>
             <Font size="13.0" />
          </font>
