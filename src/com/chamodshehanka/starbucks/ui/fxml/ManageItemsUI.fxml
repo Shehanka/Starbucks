@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.chamodshehanka.starbucks.ui.controller.ManageItemsUIController"
-            prefHeight="600.0" prefWidth="800.0">
-
+<AnchorPane fx:id="rootManageItems" prefHeight="600.0" prefWidth="800.0" styleClass="fxml" stylesheets="@../css/ux-styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chamodshehanka.starbucks.ui.controller.ManageItemsUIController">
+   <children>
+      <AnchorPane prefHeight="80.0" prefWidth="800.0" styleClass="white-pane">
+         <children>
+            <JFXButton fx:id="btnBackButton" layoutX="34.0" layoutY="16.0" onAction="#backButtonAction" prefHeight="40.0" prefWidth="40.0" />
+         </children>
+      </AnchorPane>
+      <Text fill="#017143" layoutX="303.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE ITEMS">
+         <font>
+            <Font name="Calibri" size="34.0" />
+         </font>
+      </Text>
+   </children>
 </AnchorPane>
